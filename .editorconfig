@@ -1,0 +1,36 @@
+root = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+insert_final_newline = true
+
+# B2: compact consecutive fields, retain one intentional separator.
+resharper_csharp_keep_blank_lines_in_declarations = 1
+resharper_csharp_remove_blank_lines_near_braces_in_declarations = true
+resharper_csharp_blank_lines_inside_type = 0
+resharper_csharp_blank_lines_around_field = 0
+resharper_csharp_blank_lines_around_single_line_field = 0
+
+# Properties and methods: one blank line between unrelated members.
+# When an exported property sits among exported fields, Rider may add
+# a blank line; this is a formatter limitation, not a File Layout sort.
+resharper_csharp_blank_lines_around_property = 1
+resharper_csharp_blank_lines_around_single_line_property = 1
+resharper_csharp_blank_lines_around_auto_property = 1
+resharper_csharp_blank_lines_around_single_line_auto_property = 1
+resharper_csharp_blank_lines_around_invocable = 1
+resharper_csharp_blank_lines_around_single_line_invocable = 1
+resharper_csharp_blank_lines_around_type = 1
+resharper_csharp_blank_lines_around_single_line_type = 1
+
+# Never place attributes inline with their owners.
+resharper_csharp_place_field_attribute_on_same_line = never
+resharper_csharp_place_accessorholder_attribute_on_same_line = never
+resharper_csharp_place_method_attribute_on_same_line = never
+resharper_csharp_place_type_attribute_on_same_line = never
+
+# Keep individually authored attribute lines when possible.
+resharper_csharp_keep_existing_attribute_arrangement = true

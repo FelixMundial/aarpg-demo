@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ih4y6wjs6782"]
+
+[ext_resource type="PackedScene" uid="uid://cubf0rcmvk36h" path="res://system/world_root.tscn" id="1_e3qjd"]
+
+[node name="GameRoot" unique_id=748298458 instance=ExtResource("1_e3qjd")]

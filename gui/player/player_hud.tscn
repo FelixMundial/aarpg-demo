@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dy3pa8ada20q4"]
+
+[ext_resource type="Texture2D" uid="uid://b5oxx8yq14gjr" path="res://gui/player/sprites/gui-health.png" id="1_cnlwj"]
+[ext_resource type="Script" uid="uid://bjb1m6p5mnuk3" path="res://gui/player/PlayerHud.cs" id="1_mis54"]
+[ext_resource type="PackedScene" uid="uid://ctp8tg7q0edrg" path="res://gui/player/health_slot.tscn" id="3_mis54"]
+
+[node name="PlayerHud" type="CanvasLayer" unique_id=508569262]
+process_mode = 1
+script = ExtResource("1_mis54")
+_healthSlotScene = ExtResource("3_mis54")
+
+[node name="Container" type="Control" parent="." unique_id=449450695]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="Container" unique_id=1521875133]
+position = Vector2(100, 30)
+scale = Vector2(2, 2)
+texture = ExtResource("1_cnlwj")
+region_enabled = true
+region_rect = Rect2(29, 0, 34, 8)
+
+[node name="HealthBar" type="HFlowContainer" parent="Container" unique_id=1878960904]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 45.0
+offset_right = 100.0
+offset_bottom = 85.0
+scale = Vector2(2, 2)
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 2

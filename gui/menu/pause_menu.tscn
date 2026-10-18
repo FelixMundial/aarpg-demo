@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://cpdd0ctyhq0we"]
+
+[ext_resource type="Script" uid="uid://ukqv1inx3fj2" path="res://gui/menu/PauseMenu.cs" id="1_s3lwh"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1862084637]
+process_mode = 2
+layer = 2
+script = ExtResource("1_s3lwh")
+
+[node name="Background" type="ColorRect" parent="." unique_id=760171339]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.47843137, 0.48235294, 0.5176471, 0.39215687)
+
+[node name="ButtonContainer" type="VBoxContainer" parent="." unique_id=969346537]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -85.5
+offset_right = 48.0
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="ResumeButton" type="Button" parent="ButtonContainer" unique_id=2006279417]
+layout_mode = 2
+text = "Resume"
+
+[node name="SaveButton" type="Button" parent="ButtonContainer" unique_id=1008358823]
+layout_mode = 2
+text = "Save Game"
+
+[node name="LoadButton" type="Button" parent="ButtonContainer" unique_id=1059570614]
+layout_mode = 2
+text = "Load Game"
+
+[node name="QuitButton" type="Button" parent="ButtonContainer" unique_id=1089788548]
+layout_mode = 2
+text = "Quit"
+
+[node name="PausedLabel" type="Label" parent="." unique_id=111459820]
+modulate = Color(1, 1, 1, 0.61960787)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = -132.0
+offset_right = 30.0
+offset_bottom = -102.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Paused"
+horizontal_alignment = 1
+vertical_alignment = 1

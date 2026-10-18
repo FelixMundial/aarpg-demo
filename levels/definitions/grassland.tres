@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LevelDefinition" format=3 uid="uid://8326ej6jg5f4"]
+
+[ext_resource type="Script" uid="uid://buof7vvqueqld" path="res://levels/metadata/LevelDefinition.cs" id="1_wnmo0"]
+
+[resource]
+script = ExtResource("1_wnmo0")
+Id = "grassland"
+SceneResourceReference = "uid://hnd3lvn1dtso"
+metadata/_custom_type_script = "uid://buof7vvqueqld"

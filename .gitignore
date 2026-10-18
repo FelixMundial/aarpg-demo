@@ -1,0 +1,23 @@
+# Godot generated/imported data and export output
+.godot/
+.import/
+/android/
+export.cfg
+export_credentials.cfg
+*.translation
+
+# Godot .NET and .NET build output
+~*.dll
+.mono/
+mono_crash.*.json
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# Local IDE and operating system files
+.idea/
+.vs/
+.DS_Store
+
+# Local planning artifacts
+.superpowers/

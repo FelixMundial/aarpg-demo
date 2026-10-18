@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="LevelDefinition" format=3 uid="uid://4vjnjogkfrw5"]
+
+[ext_resource type="Script" uid="uid://buof7vvqueqld" path="res://levels/metadata/LevelDefinition.cs" id="1_lhmic"]
+
+[resource]
+script = ExtResource("1_lhmic")
+Id = "playground"
+SceneResourceReference = "uid://cty5f4psb4x2a"
+metadata/_custom_type_script = "uid://buof7vvqueqld"

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cubf0rcmvk36h"]
+
+[ext_resource type="Script" uid="uid://cxgfl6v4thpir" path="res://system/WorldRoot.cs" id="1_35ggv"]
+[ext_resource type="PackedScene" uid="uid://q2sha8qrp1ha" path="res://player/player.tscn" id="2_ta1kb"]
+[ext_resource type="Script" uid="uid://buof7vvqueqld" path="res://levels/metadata/LevelDefinition.cs" id="3_4n1i3"]
+[ext_resource type="Script" uid="uid://bdftpsrxafl8b" path="res://levels/metadata/LevelCatalog.cs" id="4_g15nk"]
+[ext_resource type="Resource" uid="uid://4vjnjogkfrw5" path="res://levels/definitions/playground.tres" id="4_k6e3d"]
+[ext_resource type="Resource" uid="uid://8326ej6jg5f4" path="res://levels/definitions/grassland.tres" id="5_u0gtk"]
+[ext_resource type="PackedScene" uid="uid://dy3pa8ada20q4" path="res://gui/player/player_hud.tscn" id="7_hioh6"]
+[ext_resource type="PackedScene" uid="uid://dglm0f3l63e0q" path="res://gui/transition/level_transition_overlay.tscn" id="8_n48ob"]
+[ext_resource type="PackedScene" uid="uid://cpdd0ctyhq0we" path="res://gui/menu/pause_menu.tscn" id="9_islf1"]
+
+[sub_resource type="Resource" id="Resource_mdld0"]
+script = ExtResource("4_g15nk")
+LevelDefinitions = Array[ExtResource("3_4n1i3")]([ExtResource("4_k6e3d"), ExtResource("5_u0gtk")])
+metadata/_custom_type_script = "uid://bdftpsrxafl8b"
+
+[node name="WorldRoot" type="Node2D" unique_id=1375571334]
+process_mode = 3
+script = ExtResource("1_35ggv")
+_playerScene = ExtResource("2_ta1kb")
+_initialLevelId = "playground"
+_levelCatalog = SubResource("Resource_mdld0")
+
+[node name="HUD" type="Node2D" parent="." unique_id=1728123996]
+
+[node name="PlayerHud" parent="HUD" unique_id=508569262 instance=ExtResource("7_hioh6")]
+
+[node name="LevelTransitionOverlay" parent="HUD" unique_id=1678177999 instance=ExtResource("8_n48ob")]
+
+[node name="PauseMenu" parent="HUD" unique_id=1862084637 instance=ExtResource("9_islf1")]
+
+[node name="World" type="Node2D" parent="." unique_id=915623836]
+process_mode = 1
+y_sort_enabled = true
+
+[node name="Levels" type="Node2D" parent="World" unique_id=1652607410]
+y_sort_enabled = true

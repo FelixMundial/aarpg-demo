@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ctp8tg7q0edrg"]
+
+[ext_resource type="Script" uid="uid://d0qulr28itfvi" path="res://gui/player/HealthSlot.cs" id="1_3a22n"]
+[ext_resource type="Texture2D" uid="uid://b5oxx8yq14gjr" path="res://gui/player/sprites/gui-health.png" id="1_sqby3"]
+
+[node name="HealthSlot" type="Control" unique_id=1430414238]
+custom_minimum_size = Vector2(9, 8)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3a22n")
+
+[node name="HealthSprite" type="Sprite2D" parent="." unique_id=462070255]
+texture = ExtResource("1_sqby3")
+centered = false
+hframes = 7
+vframes = 2

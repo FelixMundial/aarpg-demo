@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ddiddqtnar1tl"]
+
+[ext_resource type="Script" uid="uid://645wjk6gpvd4" path="res://Main.cs" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cubf0rcmvk36h" path="res://system/world_root.tscn" id="1_ig7tw"]
+
+[node name="Main" type="Node" unique_id=1566926994]
+script = ExtResource("1_0xm2m")
+_worldRootScene = ExtResource("1_ig7tw")
+
+[node name="ScreenHost" type="Node" parent="." unique_id=1210610420]
